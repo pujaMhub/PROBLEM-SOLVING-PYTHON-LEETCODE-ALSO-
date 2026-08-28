@@ -5,3 +5,4 @@ def freq(arr):
     return freq_arr
 arr=[1,1,3,2,4,3,3,4,4]
 print(freq(arr))
+
