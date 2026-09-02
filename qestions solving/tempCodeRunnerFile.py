@@ -1,16 +1,12 @@
-
-# method 4 with optimized
-def secondlarge(arr):
-    large=float("-inf")
-    second=float("-inf")
+def dup(arr):
     n=len(arr)
+    freq_map={}
     for i in range(0,n):
-        if arr[i]>large:# if arr[i] is big than arge second will update in large and large will update with value arr[i]
-            second=large
-            large=arr[i]
-        elif arr[i]>second and arr[i]!=large:#if again second is big than arr[i] second variable will updated to arr[i] but
-            # it must be not equal to the previous large number
-            second=arr[i]
-    return second
-arr=[453,3,2,4,390]
-print(secondlarge(arr))
+        freq_map[arr[i]]=0
+    j=0
+    for k in freq_map:
+        arr[j]=k
+        j+=1
+    return j
+arr=[1,2,3,3,4,5,7,7,8,10]
+print(dup(arr))

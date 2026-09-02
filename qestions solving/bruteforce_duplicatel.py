@@ -10,3 +10,14 @@ def removeDuplicates(nums):
     return j
 arr=[1,2,3,3,4,5,7,7,8,10]
 print(removeDuplicates(arr))
+
+
+
+
+
+
+
+
+
+
+
